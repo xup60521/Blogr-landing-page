@@ -14,11 +14,13 @@
         <!-- md:px-[10vw] px-6 py-32 -->
         <!-- intro -->
         <div
-            class="flex flex-col md:px-[10vw] px-6 bg-gradient-to-r from-g_nav_red1 to-g_nav_red2 w-full overflow-hidden relative rounded-bl-[5rem]">
+            class="flex flex-col md:px-[10vw] px-6 bg-gradient-to-br md:bg-gradient-to-r from-g_nav_red1 to-g_nav_red2 w-full overflow-hidden relative rounded-bl-[5rem]">
             <img src="/images/bg-pattern-intro-desktop.svg" alt="intro pattern"
-                class="absolute aspect-square size-[100vw] scale-[2] translate-x-[10%] -translate-y-[38%]">
+                class="absolute aspect-square size-[100vw] scale-[2] translate-x-[10%] -translate-y-[38%] md:block hidden">
+            <img src="/images/bg-pattern-intro-mobile.svg" alt="intro pattern"
+                class="absolute aspect-square size-[100vw] scale-[3] translate-x-[30%] translate-y-[50%] md:hidden">
             <nav class="flex items-center w-full gap-8 py-6 font-ubuntu z-10">
-                <img src="/images/logo.svg" alt="logo" class="mr-8">
+                <img src="/images/logo.svg" alt="logo" class="mr-8 md:h-auto h-8">
                 <button class="md:flex hidden items-center text-sm gap-2 text-white">Product <img
                         src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
                 <button class="md:flex hidden items-center text-sm gap-2 text-white">Company <img
@@ -26,13 +28,17 @@
                 <button class="md:flex hidden items-center text-sm gap-2 text-white">Connect <img
                         src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
                 <div class="flex-grow"></div>
+                <img src="/images/icon-hamburger.svg" alt="menu btn" class="md:hidden cursor-pointer" role="button" id="button">
                 <button class="md:block hidden text-white text-sm">Login</button>
-                <button class="md:block hidden text-sm py-2 px-7 rounded-full font-bold bg-white text-c_Light_red_CTA_text">Sign
+                <button
+                    class="md:block hidden text-sm py-2 px-7 rounded-full font-bold bg-white text-c_Light_red_CTA_text">Sign
                     Up</button>
             </nav>
             <div class="flex flex-col w-full py-32 items-center z-10">
-                <h1 class="font-ubuntu md:text-[3rem] text-[2.25rem] md:text-left text-center text-white">A modern publishing platform</h1>
-                <p class="text-c_Grayish_blue_footer_text_ md:mt-0 mt-4 md:text-left text-center md:px-0 px-4">Grow your audience and build your online brand</p>
+                <h1 class="font-ubuntu md:text-[3rem] text-[2.25rem]  text-center text-white">A modern
+                    publishing platform</h1>
+                <p class="text-c_Grayish_blue_footer_text_ md:mt-0 mt-4 md:text-left text-center md:px-0 px-4">Grow your
+                    audience and build your online brand</p>
                 <div class="w-[13rem] grid grid-cols-2 gap-4 mt-8 md:scale-100 scale-125">
                     <button class="text-xs pt-2 pb-1 rounded-full font-bold bg-white text-c_Light_red_CTA_text">Start
                         for Free</button>
@@ -43,12 +49,13 @@
             </div>
         </div>
         <div class="flex flex-col relative md:px-[10vw] overflow-hidden bg-white pt-32 pb-44 md:gap-24 gap-12">
-            <h2 class="text-3xl text-center font-semibold text-c_Very_dark_blue_headings">Designed for the future</h2>
+            <h2 class="md:text-3xl text-2xl text-center font-semibold text-c_Very_dark_blue_headings">Designed for the future</h2>
             <div class="w-full md:grid flex flex-col-reverse md:px-0 px-6 md:items-start items-center grid-cols-2">
                 <!-- left -->
                 <div class="flex flex-col gap-16">
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-2xl md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
+                        <h3
+                            class="text-2xl md:px-0 px-8 md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
                             Introducing an extensible editor
                         </h3>
                         <p class="leading-7 md:text-left text-center text-c_Very_dark_grayish_blue_body_copy">
@@ -64,7 +71,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col gap-4 md:text-left text-center">
-                        <h3 class="text-2xl text-c_Very_dark_blue_headings font-ubuntu">
+                        <h3 class="text-2xl md:px-0 px-8 text-c_Very_dark_blue_headings font-ubuntu">
                             Robust content management
                         </h3>
                         <p class="leading-7 md:text-left text-center text-c_Very_dark_grayish_blue_body_copy">
@@ -79,21 +86,22 @@
 
                 <img src="/images/illustration-editor-desktop.svg" alt="illustration"
                     class="absolute md:block hidden -translate-y-[25%] translate-x-[25%] w-[55vw] right-0">
-                <img src="/images/illustration-editor-mobile.svg" alt="ill" class="md:hidden">
+                <img src="/images/illustration-editor-mobile.svg" alt="ill" class="md:hidden scale-125 mt-8 mb-24">
             </div>
         </div>
         <div
-            class="w-full py-24 md:grid grid-cols-2 flex flex-col md:items-start items-center relative bg-gradient-to-r from-g_body_blue1 to-g_body_blue2 rounded-tr-[5rem] rounded-bl-[5rem]">
+            class="w-full md:mt-0 mt-28 py-24 md:grid grid-cols-2 flex flex-col md:items-start items-center relative bg-gradient-to-br md:bg-gradient-to-r from-g_body_blue1 to-g_body_blue2 rounded-tr-[5rem] rounded-bl-[5rem]">
             <div class="absolute w-full h-full overflow-hidden top-0 left-0">
                 <img src="/images/bg-pattern-circles.svg" alt="circle"
-                    class="absolute w-[70vw] md:-left-[15vw] md:-bottom-[10vw]">
+                    class="absolute w-[100vw] md:scale-100 scale-150 md:translate-x-0 md:translate-y-0 -translate-y-[30%] md:w-[70vw] md:-left-[15vw] md:-bottom-[10vw]">
             </div>
-            <div></div>
+            <div class="md:h-auto h-36"></div>
             <img src="/images/illustration-phones.svg" alt="phones"
-                class="absolute left-[50%] -translate-x-[120%] h-[140%] -translate-y-[10%]">
+                class="absolute md:left-[50%] md:-translate-x-[120%] md:h-[140%] md:-translate-y-[10%] -translate-y-[17rem]">
             <div class="flex flex-col gap-6 z-10">
-                <h2 class="text-[2rem] font-ubuntu text-white">State of the Art Infrastructure</h2>
-                <p class="text-c_Grayish_blue_footer_text_ md:max-w-[31rem]">
+                <h2 class="text-[2rem] font-ubuntu md:text-left text-center text-white">State of the Art Infrastructure
+                </h2>
+                <p class="text-c_Grayish_blue_footer_text_ md:max-w-[31rem] md:text-left text-center md:px-0 px-8">
                     With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
                     connectivity.
                     This ensures your site will load instantly, no matter where your readers are, keeping your site
@@ -104,14 +112,16 @@
         <div class="md:grid grid-cols-2 flex flex-col w-full items-center">
             <div class="w-full h-full relative overflow-hidden flex flex-col justify-center">
                 <img src="/images/illustration-laptop-desktop.svg" alt="laptop illustration"
-                    class="scale-[1.25] -translate-x-[10vw]">
+                    class="scale-[1.25] -translate-x-[10vw] md:block hidden">
+                <img src="/images/illustration-laptop-mobile.svg" alt="laptop illustration"
+                    class="md:hidden scale-125 mt-24 mb-20">
             </div>
-            <div class="flex flex-col justify-center gap-16 py-64 ">
+            <div class="flex flex-col justify-center gap-16 md:py-64 ">
                 <div class="flex flex-col gap-4">
-                    <h3 class="text-2xl text-c_Very_dark_blue_headings font-ubuntu">
+                    <h3 class="text-2xl md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
                         Free, open, simple
                     </h3>
-                    <p class="leading-7 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
+                    <p class="leading-7 md:text-left text-center md:px-0 px-9 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
                         Blogr is a free and open source application backed by a large community of helpful developers.
                         It supports
                         features such as code syntax highlighting, RSS feeds, social media integration, third-party
@@ -121,10 +131,10 @@
                     </p>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <h3 class="text-2xl text-c_Very_dark_blue_headings font-ubuntu">
+                    <h3 class="text-2xl md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
                         Powerful tooling
                     </h3>
-                    <p class="leading-7 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
+                    <p class="leading-7 md:text-left text-center md:px-0 px-6 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
                         Batteries included. We built a simple and straightforward CLI tool that makes customization and
                         deployment a breeze, but
                         capable of producing even the most complicated sites.
@@ -133,25 +143,25 @@
             </div>
         </div>
         <!-- footer -->
-        <footer class="md:px-[10vw] w-full py-16 bg-c_Very_dark_black_blue_footer_background_ grid grid-cols-4">
+        <footer class="md:px-[10vw] w-full py-16 md:rounded-tr-none rounded-tr-[8rem] md:mt-0 mt-24 bg-c_Very_dark_black_blue_footer_background_ md:grid grid-cols-4 flex flex-col items-center md:gap-0 gap-12">
             <img src="/images/logo.svg" alt="logo" class="">
-            <div class="flex flex-col gap-2">
-                <h4 class="text-white pb-2">Product</h4>
+            <div class="flex flex-col gap-2 md:items-start items-center">
+                <h4 class="text-white pb-2 w-fit">Product</h4>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Overview</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Pricing</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Marketplace</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Features</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Integrations</button>
             </div>
-            <div class="flex flex-col gap-2">
-                <h4 class="text-white pb-2">Company</h4>
+            <div class="flex flex-col gap-2 md:items-start items-center">
+                <h4 class="text-white pb-2 w-fit">Company</h4>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">About</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Team</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Blog</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Careers</button>
             </div>
-            <div class="flex flex-col gap-2">
-                <h4 class="text-white pb-2">Connect</h4>
+            <div class="flex flex-col gap-2 md:items-start items-center">
+                <h4 class="text-white pb-2 w-fit">Connect</h4>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Contact</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Newsletter</button>
                 <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">LinkedIn</button>
