@@ -21,17 +21,24 @@
                 class="absolute aspect-square size-[100vw] scale-[3] translate-x-[30%] translate-y-[50%] md:hidden">
             <nav class="flex items-center w-full gap-8 py-6 font-ubuntu z-10">
                 <img src="/images/logo.svg" alt="logo" class="mr-8 md:h-auto h-8">
-                <button class="md:flex hidden items-center text-sm gap-2 text-white">Product <img
-                        src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
-                <button class="md:flex hidden items-center text-sm gap-2 text-white">Company <img
-                        src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
-                <button class="md:flex hidden items-center text-sm gap-2 text-white">Connect <img
-                        src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                <div class="relative md:block hidden">
+                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Product <img
+                            src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                </div>
+                <div class="relative md:block hidden">
+                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Company <img
+                            src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                </div>
+                <div class="relative md:block hidden">
+                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Connect <img
+                            src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                </div>
                 <div class="flex-grow"></div>
-                <img src="/images/icon-hamburger.svg" alt="menu btn" class="md:hidden cursor-pointer" role="button" id="button">
-                <button class="md:block hidden text-white text-sm">Login</button>
+                <img src="/images/icon-hamburger.svg" alt="menu btn" class="md:hidden cursor-pointer" role="button"
+                    id="button">
+                <button class="md:block hidden text-white text-sm ">Login</button>
                 <button
-                    class="md:block hidden text-sm py-2 px-7 rounded-full font-bold bg-white text-c_Light_red_CTA_text">Sign
+                    class="md:block hidden text-sm py-2 px-7 rounded-full font-bold bg-white text-c_Light_red_CTA_text transition hover:text-white hover:bg-c_Very_light_red_CTA_hover_background">Sign
                     Up</button>
             </nav>
             <div class="flex flex-col w-full py-32 items-center z-10">
@@ -40,16 +47,17 @@
                 <p class="text-c_Grayish_blue_footer_text_ md:mt-0 mt-4 md:text-left text-center md:px-0 px-4">Grow your
                     audience and build your online brand</p>
                 <div class="w-[13rem] grid grid-cols-2 gap-4 mt-8 md:scale-100 scale-125">
-                    <button class="text-xs pt-2 pb-1 rounded-full font-bold bg-white text-c_Light_red_CTA_text">Start
+                    <button class="text-xs pt-2 pb-1 rounded-full font-bold bg-white text-c_Light_red_CTA_text transition hover:text-white hover:bg-c_Very_light_red_CTA_hover_background">Start
                         for Free</button>
                     <button
-                        class="text-xs pt-2 pb-1 rounded-full font-bold text-white bg-transparent border-[1px] border-white">Learn
+                        class="text-xs pt-2 pb-1 rounded-full font-bold text-white bg-transparent border-[1px] border-white transition hover:bg-white hover:text-c_Light_red_CTA_text">Learn
                         More</button>
                 </div>
             </div>
         </div>
         <div class="flex flex-col relative md:px-[10vw] overflow-hidden bg-white pt-32 pb-44 md:gap-24 gap-12">
-            <h2 class="md:text-3xl text-2xl text-center font-semibold text-c_Very_dark_blue_headings">Designed for the future</h2>
+            <h2 class="md:text-3xl text-2xl text-center font-semibold text-c_Very_dark_blue_headings">Designed for the
+                future</h2>
             <div class="w-full md:grid flex flex-col-reverse md:px-0 px-6 md:items-start items-center grid-cols-2">
                 <!-- left -->
                 <div class="flex flex-col gap-16">
@@ -121,7 +129,8 @@
                     <h3 class="text-2xl md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
                         Free, open, simple
                     </h3>
-                    <p class="leading-7 md:text-left text-center md:px-0 px-9 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
+                    <p
+                        class="leading-7 md:text-left text-center md:px-0 px-9 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
                         Blogr is a free and open source application backed by a large community of helpful developers.
                         It supports
                         features such as code syntax highlighting, RSS feeds, social media integration, third-party
@@ -134,7 +143,8 @@
                     <h3 class="text-2xl md:text-left text-center text-c_Very_dark_blue_headings font-ubuntu">
                         Powerful tooling
                     </h3>
-                    <p class="leading-7 md:text-left text-center md:px-0 px-6 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
+                    <p
+                        class="leading-7 md:text-left text-center md:px-0 px-6 md:max-w-[31rem] text-c_Very_dark_grayish_blue_body_copy">
                         Batteries included. We built a simple and straightforward CLI tool that makes customization and
                         deployment a breeze, but
                         capable of producing even the most complicated sites.
@@ -143,28 +153,41 @@
             </div>
         </div>
         <!-- footer -->
-        <footer class="md:px-[10vw] w-full py-16 md:rounded-tr-none rounded-tr-[8rem] md:mt-0 mt-24 bg-c_Very_dark_black_blue_footer_background_ md:grid grid-cols-4 flex flex-col items-center md:gap-0 gap-12">
+        <footer
+            class="md:px-[10vw] w-full py-16 md:rounded-tr-none rounded-tr-[8rem] md:mt-0 mt-24 bg-c_Very_dark_black_blue_footer_background_ md:grid grid-cols-4 flex flex-col md:items-start items-center md:gap-0 gap-12">
             <img src="/images/logo.svg" alt="logo" class="">
             <div class="flex flex-col gap-2 md:items-start items-center">
                 <h4 class="text-white pb-2 w-fit">Product</h4>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Overview</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Pricing</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Marketplace</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Features</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Integrations</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Overview</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Pricing</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Marketplace</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Features</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Integrations</button>
             </div>
             <div class="flex flex-col gap-2 md:items-start items-center">
                 <h4 class="text-white pb-2 w-fit">Company</h4>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">About</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Team</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Blog</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Careers</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">About</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Team</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Blog</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Careers</button>
             </div>
             <div class="flex flex-col gap-2 md:items-start items-center">
                 <h4 class="text-white pb-2 w-fit">Connect</h4>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Contact</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Newsletter</button>
-                <button class="text-left w-fit font-ubuntu text-c_Grayish_blue_footer_text_">LinkedIn</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Contact</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">Newsletter</button>
+                <button
+                    class="text-left hover:underline w-fit font-ubuntu text-c_Grayish_blue_footer_text_">LinkedIn</button>
             </div>
         </footer>
     </main>
