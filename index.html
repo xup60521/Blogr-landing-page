@@ -19,19 +19,52 @@
                 class="absolute aspect-square size-[100vw] scale-[2] translate-x-[10%] -translate-y-[38%] md:block hidden">
             <img src="/images/bg-pattern-intro-mobile.svg" alt="intro pattern"
                 class="absolute aspect-square size-[100vw] scale-[3] translate-x-[30%] translate-y-[50%] md:hidden">
-            <nav class="flex items-center w-full gap-8 py-6 font-ubuntu z-10">
+            <nav class="flex items-center w-full gap-8 py-6 font-ubuntu z-20">
                 <img src="/images/logo.svg" alt="logo" class="mr-8 md:h-auto h-8">
                 <div class="relative md:block hidden">
-                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Product <img
+                    <button class="flex dropdown-btn items-center text-sm gap-2 text-white hover:underline">Product <img
                             src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                    <div style="display: none;"
+                        class="absolute dropdown-menu bg-white flex flex-col w-28 px-4 py-4 gap-2 rounded -left-4 top-8">
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Overview</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Pricing</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Marketplace</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Features</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Integrations</button>
+                    </div>
                 </div>
                 <div class="relative md:block hidden">
-                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Company <img
+                    <button class="flex dropdown-btn items-center text-sm gap-2 text-white hover:underline">Company <img
                             src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                    <div style="display: none;"
+                        class="absolute dropdown-menu bg-white flex flex-col w-28 px-4 py-4 gap-2 rounded -left-4 top-8">
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">About</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Team</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Blog</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Careers</button>
+                    </div>
                 </div>
                 <div class="relative md:block hidden">
-                    <button class="flex items-center text-sm gap-2 text-white hover:underline">Connect <img
+                    <button class="flex dropdown-btn items-center text-sm gap-2 text-white hover:underline">Connect <img
                             src="/images/icon-arrow-light.svg" alt="arrow down" class="translate-y-[2px]"></button>
+                    <div style="display: none;"
+                        class="absolute dropdown-menu bg-white flex flex-col w-28 px-4 py-4 gap-2 rounded -left-4 top-8">
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Contact</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">Newsletter</button>
+                        <button
+                            class="text-xs hover:font-medium text-left hover:text-black font-ubuntu text-c_Very_dark_grayish_blue_body_copy">LinkedIn</button>
+                    </div>
                 </div>
                 <div class="flex-grow"></div>
                 <img src="/images/icon-hamburger.svg" alt="menu btn" class="md:hidden cursor-pointer" role="button"
@@ -47,7 +80,8 @@
                 <p class="text-c_Grayish_blue_footer_text_ md:mt-0 mt-4 md:text-left text-center md:px-0 px-4">Grow your
                     audience and build your online brand</p>
                 <div class="w-[13rem] grid grid-cols-2 gap-4 mt-8 md:scale-100 scale-125">
-                    <button class="text-xs pt-2 pb-1 rounded-full font-bold bg-white text-c_Light_red_CTA_text transition hover:text-white hover:bg-c_Very_light_red_CTA_hover_background">Start
+                    <button
+                        class="text-xs pt-2 pb-1 rounded-full font-bold bg-white text-c_Light_red_CTA_text transition hover:text-white hover:bg-c_Very_light_red_CTA_hover_background">Start
                         for Free</button>
                     <button
                         class="text-xs pt-2 pb-1 rounded-full font-bold text-white bg-transparent border-[1px] border-white transition hover:bg-white hover:text-c_Light_red_CTA_text">Learn
